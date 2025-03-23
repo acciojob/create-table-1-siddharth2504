@@ -1,4 +1,4 @@
-let btn = document.querySelector("button")
+let btn = document.querySelector("input")
 let table = document.getElementById("sampleTable")
 
 btn.addEventListener("click", insertRow)
