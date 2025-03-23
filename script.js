@@ -1,15 +1,9 @@
-let btn = document.querySelector("input")
-let table = document.getElementById("sampleTable")
-
-btn.addEventListener("click", insertRow)
-
-function insertRow(){
-	let tr = document.createElement("tr")
-	let td1 = document.createElement("td")
-	td1.innerText = "New Cell1"
-	let td2 = document.createElement("td")
-	td2.innerText = "New Cell2"
-
-	tr.append(td1, td2)
-	table.prepend(tr)
+function insert_Row() {
+    //Write your code here
+	let table = document.querySelector("#sampleTable");
+	let row = table.insertRow(0);
+	for(let i = 0;i<2;i++){
+		let cell = row.insertCell(i);
+		cell.innerHTML = `New Cell${i+1}`
+	}
 }
